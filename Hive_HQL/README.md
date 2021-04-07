@@ -45,5 +45,6 @@ INSERT OVERWRITE TABLE errorLogs SELECT t1, t2, t3, t4, t5, t6, t7 FROM log4jLog
   * To verify that the errorLogs table was created, use the following statement to return all the rows from errorLogs
     * SELECT * from errorLogs;
 
-
+Reference : 
+* https://docs.microsoft.com/en-us/azure/hdinsight/hadoop/apache-hadoop-use-hive-beeline
 
