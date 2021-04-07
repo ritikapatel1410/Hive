@@ -1,0 +1,19 @@
+DROP TABLE DATA;
+
+CREATE EXTERNAL TABLE DATA(
+Country STRING,
+Continent STRING,
+Population INT,
+TotalCases INT,
+TotalDeaths INT,
+TotalRecovered INT,
+ActiveCases INT,
+Critical INT,
+TotalTests INT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\n'
+STORED AS TEXTFILE
+LOCATION '/input/hive_data';
+
